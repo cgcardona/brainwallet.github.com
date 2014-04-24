@@ -266,6 +266,10 @@
         // chainbrowser fix (needs closing slash for some reason)
         if (ADDRESS_URL_PREFIX.indexOf('chainbrowser.com')>=0 )
           $('#genAddrURL').attr('href', ADDRESS_URL_PREFIX+'/address/'+addr+'/');
+
+        // FLO fix 
+        if (ADDRESS_URL_PREFIX.indexOf('florincoin.info')>=0 )
+          $('#genAddrURL').attr('href', ADDRESS_URL_PREFIX+'address/?address='+addr);
     }
 
 
